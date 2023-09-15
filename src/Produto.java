@@ -1,65 +1,61 @@
-
-public class Produto {
+ //Neste código, removi o construtor vazio não utilizado e organizei
+ // os métodos e variáveis com anotações de acesso (public, private) 
+ //para tornar o código mais clean.//
+public class Produto {          
 	private Integer id;
-	private String nome;
-	private Integer quantidade;
-	private Double preco;
-	private Empresa empresa;
+    private String nome;
+    private Integer quantidade;
+    private Double preco;
+    private Empresa empresa;
 
-	public Produto(Integer id,String nome, Integer quantidade, Double preco, Empresa empresa) {
-		super();
-		this.id = id;
-		this.nome = nome;
-		this.quantidade = quantidade;
-		this.preco = preco;
-		this.empresa = empresa;
-	}
+    public Produto(Integer id, String nome, Integer quantidade, Double preco, Empresa empresa) {
+        this.id = id;
+        this.nome = nome;
+        this.quantidade = quantidade;
+        this.preco = preco;
+        this.empresa = empresa;
+    }
 
-	public Produto() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	
-	
+    // Getters e Setters
 
-	public Integer getId() {
-		return id;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public Empresa getEmpresa() {
-		return empresa;
-	}
+    public String getNome() {
+        return nome;
+    }
 
-	public void setEmpresa(Empresa empresa) {
-		this.empresa = empresa;
-	}
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-	public String getNome() {
-		return nome;
-	}
+    public Integer getQuantidade() {
+        return quantidade;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public void setQuantidade(Integer quantidade) {
+        this.quantidade = quantidade;
+    }
 
-	public Integer getQuantidade() {
-		return quantidade;
-	}
+    public Double getPreco() {
+        return preco;
+    }
 
-	public void setQuantidade(Integer quantidade) {
-		this.quantidade = quantidade;
-	}
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
 
-	public Double getPreco() {
-		return preco;
-	}
+    public Empresa getEmpresa() {
+        return empresa;
+    }
 
-	public void setPreco(Double preco) {
-		this.preco = preco;
-	}
-
+    public void setEmpresa(Empresa empresa) {
+        this.empresa = empresa;
+    }
 }
+
